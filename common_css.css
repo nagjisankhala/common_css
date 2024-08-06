@@ -873,3 +873,45 @@ textarea.form-control {
     display: block;
     line-height: 30px;
 }
+
+/* Sub Menu */
+
+.navbar ul li {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: auto;
+    min-width: 200px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .07);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .07);
+}
+
+.navbar ul li:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Sub Menu Responive*/
+
+.sub-menu {
+    display: none;
+    position: relative;
+    width: 100%;
+    min-width: unset;
+    opacity: 1;
+    visibility: visible;
+    transition: unset;
+    -webkit-transition: unset;
+    background-color: #fff;
+}
